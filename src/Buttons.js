@@ -1,17 +1,12 @@
-import { list } from "./AccordionServ/list";
 
-function Buttons ({setIsOpen}) {
+function Buttons ({filteredAccordion}) {
 
-    const chosenServ = (searchTerm) => {
-        const newServ = list.filter ( element => element.searchTerm.includes(searchTerm));
-        setIsOpen (newServ);
-    }
 
     return (<div className="btnContainer">
 
-        <button className="btn" onClick={()=> chosenServ ('health')}>Здоровье</button>
-        <button className="btn">Красота</button>
-        <button className="btn">Безопасность</button>
+        <button className="btn" onClick={()=> filteredAccordion ('health')}>Здоровье</button>
+        <button className="btn" onClick={()=> filteredAccordion ('beauty')}>Красота</button>
+        <button className="btn" onClick={()=> filteredAccordion ('safety')}>Безопасность</button>
 
     </div>)
 }

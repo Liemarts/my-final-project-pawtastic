@@ -12,11 +12,12 @@ import Home from './Home';
 import imageFavicon from './Pictures/icons8-cat-footprint-40.png';
 import Footer from './components/Footer';
 
+
 function App() {
 
   return <Router>
   <nav>
-    <Link to= "/" className='link iconTitle'><span><img src={imageFavicon} width="20px" height="20px" alt='fav'/></span> Paw-tastic Care</Link>
+    <Link to= "/" className='link iconTitle'><span><img src={imageFavicon} width="20px" height="20px" alt='fav'/> Paw-tastic Care</span></Link>
     <Link to= "/" className='link'>Главная</Link>
     <Link to= "/services" className='link'>Услуги</Link>
     <Link to= "/team" className='link'>Наша команда</Link>

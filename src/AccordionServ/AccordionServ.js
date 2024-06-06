@@ -7,15 +7,20 @@ import './style.css';
 
 export const AccordionServ = () => {
 
-    const [isOpen, setIsOpen] = useState (false);
+    const [accordion, setAccordion] = useState (list);
+
+    const filteredAccordion = (searchTerm) => {
+        const newList = list.filter (element => element.searchTerm.includes(searchTerm));
+        setAccordion (newList);
+    }
 
     return (<div>
 
-    <Buttons  setIsOpen={setIsOpen}/>
+    <Buttons  filteredAccordion={filteredAccordion}/>
 
         <div className="containerServ">
 
-    { list.map((item, index) =>
+    {accordion.map((item, index) =>
         <AccordionItem key={index}
             titleServ={item.titleServ}
             content={item.content}

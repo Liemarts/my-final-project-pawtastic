@@ -1,4 +1,3 @@
-// Filename - components/Footer.js
 
 import React from "react";
 import {
@@ -20,7 +19,7 @@ const Footer = () => {
                 
 			        <Row>
 						<FooterLink href="#">
-							<i className="fab fa-facebook-f">
+							<i>
 								<span
 									style={{
 										marginLeft: "10px",
@@ -31,7 +30,7 @@ const Footer = () => {
 							</i>
 						</FooterLink>
 						<FooterLink href="#">
-							<i className="fab fa-instagram">
+							<i>
 								<span
 									style={{
 										marginLeft: "10px",
@@ -42,7 +41,7 @@ const Footer = () => {
 							</i>
 						</FooterLink>
 						<FooterLink href="#">
-							<i className="fab fa-twitter">
+							<i>
 								<span
 									style={{
 										marginLeft: "10px",

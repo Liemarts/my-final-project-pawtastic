@@ -1,5 +1,6 @@
 .active {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px 30px;
     border-radius: 15px;
@@ -25,7 +26,7 @@
     height: 50px;
     text-align: center;
     color: #43D8C9;
-    font-size: 22px;
+    font-size: 25px;
     text-shadow: 1.5px 1.5px #b7f2eb;
 }
 
@@ -41,17 +42,6 @@
     margin: 15px;
 }
 
-.containerItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #037166;
-    border-radius: 15px;
-    margin: 30px;
-    color: #d4d3d3;
-}
-
 .titleItem {
     width: 350px;
     font-size: 25px;
@@ -64,3 +54,79 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 1000px) {
+
+    .active {
+        width: 700px;
+        margin: 20px;
+        padding: 8px 20px;
+    }
+
+    .content {
+        padding: 20px 20px; 
+        margin: 20px;
+        width: 550px;
+    }
+}
+
+@media (max-width: 800px) {
+    .default {
+        margin: 30px;
+        width: 370px;
+    }
+
+    .active {
+        flex-wrap: wrap;
+        width: 430px;
+        margin: 15px;
+        padding: 6px 15px;
+    }
+
+    .titleItem {
+        width: 200px;
+        font-size: 22px;
+        margin: 15px;
+    }
+
+    .content {
+        width: 430px;
+        padding: 15px 15px; 
+        margin: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .default {
+        margin: 20px;
+        width: 230px;
+        padding: 6px 20px;
+        font-size: 19px;
+    }
+
+    .favImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    .active {
+        width: 280px;
+        margin: 8px;
+        padding: 5px 8px;
+    }
+
+    .titleItem {
+        width: 150px;
+        font-size: 19px;
+    }
+
+    .content {
+        width: 270px;
+        padding: 6px 6px; 
+        margin: 8px;
+        font-size: 17px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}

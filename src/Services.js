@@ -7,7 +7,7 @@ function Services () {
 
     return <div>
     
-    <h2 className="title">Наши услуги</h2>
+    <h2 className="titles">Наши услуги</h2>
 
 
     <div>
