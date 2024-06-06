@@ -1,3 +1,5 @@
+import imageClient5 from './Pictures/Client 5.jpg';
+
 export const clients = [
 
     {
@@ -16,7 +18,7 @@ export const clients = [
     },
 
     {
-        image: "https://snero.ru/wp-content/uploads/2022/05/screenshot-103.jpg",
+        image: imageClient5,
         description: "Вообще, я и так само совершенство"
     },
 
