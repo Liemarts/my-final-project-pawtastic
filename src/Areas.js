@@ -8,7 +8,7 @@ export function Areas () {
 
     return (<div>
 
-<h2 className='titles'>Наши основные направления</h2>
+        <h2 className='titles'>Наши основные направления</h2>
             <div className='boxFive'>
                 <div className='order'>
                     <img src={imageGrooming} width="200px" height="200px" alt='grooming'/>
