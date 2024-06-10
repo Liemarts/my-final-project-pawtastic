@@ -1,11 +1,5 @@
 import imageMain from './Pictures/bgremoved Cat and Dog.png';
 import logo from './Pictures/paw-tastic-care-high-resolution-logo-transparent.png';
-import imageGrooming from './Pictures/груминг 2.png';
-import imageChip from './Pictures/чипирование.png';
-import imageDogHandler from './Pictures/кинолог.png';
-import imageZooHotel from './Pictures/зоогостиница.png';
-import imageDayCare from './Pictures/daycare.png';
-import imageFavicon from './Pictures/icons8-cat-footprint-40.png';
 import iconNext from './Pictures/icons8-next-page-48.png';
 import iconBack from './Pictures/icons8-back-page-48.png';
 import iconMail from './Pictures/icons8-email-48.png';
@@ -15,6 +9,9 @@ import { useState } from 'react';
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { About } from './About';
+import { Areas } from './Areas';
+import Progress from './Progress';
 
 gsap.registerPlugin(useGSAP);
 
@@ -70,57 +67,16 @@ function Home () {
             </div>
         </div>
 
-        <div className='boxThree'>
-            <div className='boxFour'>
-                <h2 className='titles'>12</h2>
-                <p className='statisticPar'>квалифицированных специалистов</p>
-            </div>
-            <div className='boxFour'>
-                <h2 className='titles'>8</h2>
-                <p className='statisticPar'>лет успешной практики</p>
-            </div>
-            <div className='boxFour'>
-                <h2 className='titles'>7 360</h2>
-                <p className='statisticPar'>довольных клиентов</p>
-            </div>
+        <div>
+            <Progress />
         </div>
 
         <div className='about'> 
-            <h2>Добро пожаловать "Paw-tastic Care"!</h2>
-            <p className='par'><span><img src={imageFavicon} width="20px" height="20px" alt='fav'/></span> Мы успешно работаем уже более 8 лет и предлагаем широкий спектр услуг для ваших домашних любимцев. Наш салон гордится своим грамотным и профессиональным персоналом, который обеспечит вашим питомцам качественный уход и внимание.</p>
-            <p className='par'><span><img src={imageFavicon} width="20px" height="20px" alt='fav'/></span> Мы предоставляем весь спектр услуг по уходу, включая стрижку, купание, чистку ушей и зубов, a также консультации кинолога и услуги зоогостиницы. Наши мастера всегда стремятся создать комфортную атмосферу для вашего питомца и обеспечить ему максимальный комфорт во время процедур.</p>
-            <p className='par'><span><img src={imageFavicon} width="20px" height="20px" alt='fav'/></span> Удобный график работы - 24/7. Внимательный персонал обеспечивает индивидуальный подход к каждому клиенту. Возможна предварительная запись. Мы предлагаем доступные цены на услуги и регулярно проводим акции.</p>
-            <p className='par'>He упустите возможность привести своего пушистого друга в наш салон и подарить ему заботу и внимание, которых он заслуживает. Мы рады видеть вас и ваших питомцев в числе наших постоянных клиентов!</p>
+            <About />
         </div>
 
         <div className='block'>
-            <h2 className='titles'>Наши основные направления</h2>
-            <div className='boxFive'>
-                <div className='order'>
-                    <img src={imageGrooming} width="200px" height="200px" alt='grooming'/>
-                    <h3>ГРУМИНГ</h3>
-                </div>
-
-                <div className='order'>
-                    <img src={imageChip} width="200px" height="200px" alt='grooming'/>
-                    <h3>ЧИПИРОВАНИЕ</h3>
-                </div>
-
-                <div className='order'>
-                    <img src={imageDogHandler} width="200px" height="200px" alt='grooming'/>
-                    <h3>КИНОЛОГ</h3>
-                </div>
-
-                <div className='order'>
-                    <img src={imageZooHotel} width="200px" height="200px" alt='grooming'/>
-                    <h3>ЗООГОСТИНИЦА</h3>
-                </div>
-
-                <div className='order'>
-                    <img src={imageDayCare} width="200px" height="200px" alt='grooming'/>
-                    <h3>ПЕРЕДЕРЖКА</h3>
-                </div>
-            </div>
+            <Areas />
         </div>
 
         <div className='block'>

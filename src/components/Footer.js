@@ -18,36 +18,36 @@ const Footer = () => {
 			<FooterContainer>
                 
 			        <Row>
-						<FooterLink href="#">
+						<FooterLink href="https://www.facebook.com/elena.mogunova">
 							<i>
 								<span
 									style={{
 										marginLeft: "10px",
 									}}
 								>
-									<a href="https://www.facebook.com/elena.mogunova"><img src={iconFacebook} alt="facebook" width="42px" height="42px"/></a>
+									<img src={iconFacebook} alt="facebook" width="42px" height="42px"/>
 								</span>
 							</i>
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="https://www.instagram.com/elena_mogunova?igsh=OWpnZnB6Zmt2MDUz&utm_source=qr">
 							<i>
 								<span
 									style={{
 										marginLeft: "10px",
 									}}
 								>
-									<a href="https://www.instagram.com/elena_mogunova?igsh=OWpnZnB6Zmt2MDUz&utm_source=qr"><img src={iconInstagram} alt="instagram" width="40px" height="40px"/></a>
+									<img src={iconInstagram} alt="instagram" width="40px" height="40px"/>
 								</span>
 							</i>
 						</FooterLink>
-						<FooterLink href="#">
+						<FooterLink href="https://t.me/Lmmjj">
 							<i>
 								<span
 									style={{
 										marginLeft: "10px",
 									}}
 								>
-									<a href="https://t.me/Lmmjj"><img src={iconTelegram} alt="telegram" width="45px" height="45px"/></a>
+									<img src={iconTelegram} alt="telegram" width="45px" height="45px"/>
 								</span>
 							</i>
 						</FooterLink>
